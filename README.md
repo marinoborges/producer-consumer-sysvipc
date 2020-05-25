@@ -4,6 +4,7 @@ Producer (lang=Python) write a file content into shared memory area
 Consumer (lang=C) read shared memory area and write to file
 - Program uses 2 shared memory areas: one for content size and another for the content itself
 - Option to check MD5 hash
+
 **Installation**
 1. Install packages: python2.7 python-sysv-ipc gcc
 2. Compile consumer:
@@ -41,7 +42,7 @@ optional arguments:
         -m      set check MD5 flag (default: false)
 ```
 
-Additional notes:
+**Additional notes:**
 - File producer-consumer-sysvipc/producer-py/cleanup.py cleans shared memory and semaphores IDs if being used
 - Consumer C program catches signals SIGINT (ctrl-c key press) and SIGTERM (kill command) in order to finish gracefully
 - Useful bash commands to get current usage of shared memory and semaphore
