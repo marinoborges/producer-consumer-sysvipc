@@ -1,10 +1,11 @@
 # Producer-Consumer-SysVIPC
 
 Producer (lang=Python) write a file content into shared memory area
+
 Consumer (lang=C) read shared memory area and write to file
 - Program uses 2 shared memory areas: one for content size and another for the content itself
 - Option to check MD5 hash
-
+___
 **Installation**
 1. Install packages: python2.7 python-sysv-ipc gcc
 2. Compile consumer:
@@ -13,7 +14,7 @@ Consumer (lang=C) read shared memory area and write to file
 ```
 3. Run Consumer first
 4. Run Producer passing argument inputfile
-
+___
 **Producer usage**
 ```
 usage: producer.py [-h] [-m] [-v] inputfile
