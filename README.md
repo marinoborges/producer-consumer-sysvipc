@@ -29,7 +29,7 @@ optional arguments:
   -m, --md5-check  set check MD5 flag (default: false)
   -v, --verbose    set verbose flag (default: false)
 ```
-
+___
 **Consumer usage**
 ```
 Usage: ./consumer [-h] [-v] [-m]
@@ -42,7 +42,7 @@ optional arguments:
         -v      set verbose flag (default: false)
         -m      set check MD5 flag (default: false)
 ```
-
+___
 **Additional notes:**
 - File producer-consumer-sysvipc/producer-py/cleanup.py cleans shared memory and semaphores IDs if being used
 - Consumer C program catches signals SIGINT (ctrl-c key press) and SIGTERM (kill command) in order to finish gracefully
